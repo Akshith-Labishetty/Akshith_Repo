@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FF</title>
+    <link rel="icon" href="ff.png">
+    <style>
+        body {
+            background-image: url(p3.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1; 
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 600px;
+            font-family: Arial, sans-serif;
+        }
+        td {
+            padding: 8px 12px;
+            vertical-align: top;
+        }
+        label {
+            font-weight: bold;
+            display: inline-block;
+            width: 180px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        select {
+            width: 300px;
+            padding: 5px;
+            background-color: rgba(0, 0, 0, 0.6); 
+            color: white;
+            border: 1px solid white; 
+        }
+
+        .checkbox-group, .radio-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .checkbox-group label, .radio-group label {
+            font-weight: normal;
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .buttons {
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 16px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 1em;
+            background-color: #444; 
+            color: white; 
+            border: none;
+        }
+
+        h2 {
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> 
+
+    <h2>
+        Welcome to FF registration
+    </h2>
+
+    <form>
+        <table>
+            <tr>
+                <td><label for="name">Enter Your Name:</label></td>
+                <td><input type="text" id="name" placeholder="Name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="uname">Enter your Username:</label></td>
+                <td><input type="text" id="uname" placeholder="In-Game Id"></td>
+            </tr>
+
+            <tr>
+                <td><label for="uid">Enter Your Uid:</label></td>
+                <td><input type="number" id="uid" placeholder="123456789"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Enter Your Email:</label></td>
+                <td><input type="email" id="email" placeholder="abc@gmail.com"></td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Choose Your DOB (&gt;18):</label></td>
+                <td><input type="date" id="dob"></td>
+            </tr>
+
+            <tr>
+                <td><label>Choose your favourite Character:</label></td>
+                <td class="checkbox-group">
+                    <label><input type="checkbox" name="c1" value="Alok"> Alok🎧</label>
+                    <label><input type="checkbox" name="c1" value="K"> K💀</label>
+                    <label><input type="checkbox" name="c1" value="Kla"> Kla👊</label>
+                    <label><input type="checkbox" name="c1" value="Wukong"> Wukong🐒
+</label>
+                    <label><input type="checkbox" name="c1" value="Sonia"> Sonia🔰
+</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Choose Diamonds to Top Up:💎💎</label></td>
+                <td class="radio-group">
+                    <label><input type="radio" name="r1" value="100"> 100💎</label>
+                    <label><input type="radio" name="r1" value="500"> 500💎</label>
+                    <label><input type="radio" name="r1" value="1000"> 1000💎</label>
+                    <label><input type="radio" name="r1" value="2000"> 2000💎</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="pay">Choose an option to pay:</label></td>
+                <td>
+                    <select id="pay">
+                        <option>UPI</option>
+                        <option>REDEEM CODE</option>
+                        <option>CARD</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="buttons">
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+html {
+    font-size: 22px;
+}
+body {
+    background: linear-gradient(to right,red ,orange,rgb(255, 157, 0));
+    color: whitesmoke;
+}
